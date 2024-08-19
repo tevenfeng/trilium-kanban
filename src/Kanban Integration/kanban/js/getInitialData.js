@@ -7,8 +7,8 @@ module.exports = async function() {
 
         // sort boards by "sortOrder"
         const sortedBoards = boards.sort((a, b) => {
-            aSortOrder = a.getLabelValue("sortOrder");
-            bSortOrder = b.getLabelValue("sortOrder");
+            const aSortOrder = a.getLabelValue("sortOrder");
+            const bSortOrder = b.getLabelValue("sortOrder");
             
             return aSortOrder - bSortOrder;
         });
@@ -18,8 +18,8 @@ module.exports = async function() {
             
             // sort cards by "sortOrders"
             const sortedCards = cards.sort((a, b) => {
-                aSortOrder = a.getLabelValue("sortOrder");
-                bSortOrder = b.getLabelValue("sortOrder");
+                const aSortOrder = a.getLabelValue("sortOrder");
+                const bSortOrder = b.getLabelValue("sortOrder");
                 
                 return aSortOrder - bSortOrder;
             });
